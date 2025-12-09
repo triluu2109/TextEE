@@ -1,4 +1,4 @@
-import os, logging, json, jsonnet, random, datetime, pprint
+import os, logging, json, _jsonnet, random, datetime, pprint
 import numpy as np
 import torch
 from argparse import Namespace
@@ -35,7 +35,7 @@ TRAINER_MAP = {
 }
 
 def load_config(config_fn):
-    config = json.loads(jsonnet.evaluate_file(config_fn))
+    config = json.loads(_jsonnet.evaluate_file(config_fn))
     config = Namespace(**config)
     assert config.task in VALID_TASKS, f"Task must be in {VALID_TASKS}"
     
