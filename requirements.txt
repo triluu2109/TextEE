@@ -1,0 +1,13 @@
+transformers
+sentencepiece
+scipy
+spacy
+nltk
+tensorboardX
+keras-preprocessing
+keras
+dgl-cu111
+amrlib
+cached_property
+typing-extensions
+penman
