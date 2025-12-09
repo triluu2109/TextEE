@@ -6,8 +6,10 @@ nltk
 tensorboardX
 keras-preprocessing
 keras
-dgl-cu111
+# dgl-cu111
 amrlib
 cached_property
 typing-extensions
-penman
+jsonnet
+ipdb
+jsonlines
