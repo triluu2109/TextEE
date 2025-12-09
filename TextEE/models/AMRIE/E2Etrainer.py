@@ -2,7 +2,7 @@ import os, sys, logging, tqdm, pprint, copy
 import torch
 import numpy as np
 from transformers import (BertTokenizer, RobertaTokenizer, XLMRobertaTokenizer,
-                          AutoTokenizer, AdamW, get_linear_schedule_with_warmup)
+                          AutoTokenizer, get_linear_schedule_with_warmup)
 from torch.utils.data import DataLoader
 from torch.optim import AdamW
 from ..trainer import BasicTrainer
