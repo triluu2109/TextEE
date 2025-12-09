@@ -12,7 +12,6 @@ from transformers.optimization import (
 
 from transformers import (
     WEIGHTS_NAME,
-    AdamW,
     Adafactor,
     AutoConfig,
     AutoTokenizer,
@@ -23,6 +22,8 @@ from transformers import (
     T5Model,
     T5ForConditionalGeneration,
 )
+
+from torch.optim import AdamW
 
 raw_special_tokens = json.load(
     open(f"{os.path.dirname(__file__)}/additional-tokens.json", "r", encoding="utf-8")
